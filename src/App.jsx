@@ -39,10 +39,9 @@ export const App = () => {
   return (
     <>
       <div>
-        <h1>学習記録</h1>
-        学習日：
+        <p className="title">学習記録</p>
       </div>
-      <div>
+      <div className="input-area">
         学習内容
         <input
           placeholder="学習内容を入力してください"
@@ -50,7 +49,7 @@ export const App = () => {
           onChange={onChangeContent}
         />
       </div>
-      <div>
+      <div className="input-area">
         学習時間
         <input
           placeholder="学習時間を入力してください"
