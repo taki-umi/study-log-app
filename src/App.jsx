@@ -76,7 +76,7 @@ export const App = () => {
       {/* 登録ボタン */}
       <AddRecord addRecord={addRecord} />
       {/* 学習記録一覧 */}
-      <StudyLogList records={records} />
+      <StudyLogList records={records} setRecords={setRecords} />
       <div>
         <Typography variant="h6" gutterBottom>
           学習合計時間
@@ -87,7 +87,7 @@ export const App = () => {
                 .map((record) => record.time)
                 .reduce((a, b) => parseInt(a) + parseInt(b))
             : 0}
-          sudo npm install -g firebase-tools 時間
+          時間
         </p>
       </div>
     </>
